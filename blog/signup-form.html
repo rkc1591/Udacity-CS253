@@ -1,0 +1,20 @@
+<html>
+<form method="post">
+  <h2>Welcome to the blog!
+  </h2>
+  <p><b>Sign up here:</b></p>
+  <label>Username:<input type="text" name="username" value="{{username}}"></label>
+  {{error_username}}
+  <br>
+  <label>Password:<input type="password" name="password" value=""></label>
+  {{error_password}}
+  <br>
+  <label>Verify:<input type="password" name="verify" value=""></label>
+  {{error_verify}}
+  <br>
+  <label>Email (optional):<input type="text" name="email" value="{{email}}"></label>
+  {{error_email}}
+  <br>
+  <input type="submit">
+</form>
+</html>
