@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Unit 2 Blog</title>
+      <style type="text/css">
+        .label {text-align: right}
+        .error {color: red}
+      </style>
+  </head>
+
+  <form method="post">
+    <h2>Welcome to the blog!
+    </h2>
+    <b>Sign up here:</b>
+    <br>
+    <label>Username:<input type="text" name="username" value="{{username}}"></label>
+    <b class="error">{{error_username}}</b>
+    <br>
+    <label>Password:<input type="password" name="password" value=""></label>
+    <b class="error">{{error_password}}</b>
+    <br>
+    <label>Verify:<input type="password" name="verify" value=""></label>
+    <b class="error">{{error_verify}}</b>
+    <br>
+    <label>Email (optional):<input type="text" name="email" value="{{email}}"></label>
+    <b class="error">{{error_email}}</b>
+    <br>
+    <input type="submit">
+  </form>
+</html>
